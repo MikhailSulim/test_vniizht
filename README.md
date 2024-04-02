@@ -56,11 +56,19 @@ https://mikhailsulim.github.io/test_vniizht/
 Для установки и запуска проекта необходимо выполнить следующие команды:
 
 - клонировать репозиторий
-  ```git clone https://github.com/MikhailSulim/test_vniizht.git```
+  ```
+  git clone https://github.com/MikhailSulim/test_vniizht.git
+  ```
 - перейти в папку с проектом
-  ```cd test_vniizht```
+  ```
+  cd test_vniizht
+  ```
 - установить зависимости
-  ```npm i```
+  ```
+  npm i
+  ```
 - запустить в режиме разработки
-  ```npm run start```
+  ```
+  npm run start
+  ```
 - открыть в браузере [http://localhost:3000](http://localhost:3000)
