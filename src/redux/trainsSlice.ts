@@ -33,7 +33,7 @@ const trainsSlice = createSlice({
 
     selectTrain: (state, action) => {
       state.selectedTrain = action.payload;
-      state.editedTrain = action.payload;
+      state.editedTrain = state.selectedTrain;
     },
 
     editTrainCharacteristics: (
@@ -43,7 +43,7 @@ const trainsSlice = createSlice({
       }
     ) => {
       const { line, characteristic, value } = action.payload;
-      state.isValid = Boolean(value);
+      state.isValid = Boolean(value && value > 0);
       const updatedCharacteristics = [...state.editedTrain.characteristics];
       updatedCharacteristics[line] = {
         ...updatedCharacteristics[line],
